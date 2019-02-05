@@ -182,7 +182,9 @@
         arWorldRoot.add(mesh);
         // end cube code
         ///////////////////////////////////////////////////////////
-        
+        geometry = new THREE.CubeGeometry(200, 200, 200);
+        material = new THREE.MeshNormalMaterial({shading: THREE.FlatShading});
+        mesh = new THREE.Mesh(geometry, material);
     
         
         ///////////////////////////////////////////////////////////
@@ -199,7 +201,7 @@
         material = new THREE.MeshNormalMaterial({shading: THREE.FlatShading});
         mesh = new THREE.Mesh(geometry, material);
         mesh.position.y = .5
-        // arWorldRoot.add(mesh);
+        arWorldRoot.add(mesh);
         
         ///////////////////////////////////////////////////////////
 //        // add a taurus with rotation animation
