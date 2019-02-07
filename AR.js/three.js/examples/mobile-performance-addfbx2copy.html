@@ -194,8 +194,8 @@
         //arWorldRoot.add( mesh ); //instead of adding mesh to the scene right away we add only when the target is detected
         //end icosphere code
         ///////////////////////////////////////////////////////////
-        map = THREE.ImageUtils.loadTexture('../texturez/mario.jpg');
-        geometry = new THREE.CubeGeometry(2, 2, 2);
+        // map = THREE.ImageUtils.loadTexture('../texturez/mario.jpg');
+        geometry = new THREE.CubeGeometry(1, 1, 1);
         material = new THREE.MeshNormalMaterial({shading: THREE.FlatShading});
         mesh = new THREE.Mesh(geometry, material);
         mesh.position.y = .5
