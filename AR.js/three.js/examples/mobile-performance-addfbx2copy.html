@@ -195,11 +195,11 @@
         //end icosphere code
         ///////////////////////////////////////////////////////////
         map = THREE.ImageUtils.loadTexture('../texturez/mario.jpg');
-        geometry = new THREE.CubeGeometry(200, 200, 200);
+        geometry = new THREE.CubeGeometry(2, 2, 2);
         material = new THREE.MeshNormalMaterial({shading: THREE.FlatShading});
         mesh = new THREE.Mesh(geometry, material);
         mesh.position.y = .5
-        arWorldRoot.add(mesh);
+        arWorldRoot.add( mesh );
         
         ///////////////////////////////////////////////////////////
 //        // add a taurus with rotation animation
